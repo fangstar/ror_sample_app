@@ -7,7 +7,8 @@ group :development, :test do
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
-gem 'rspec-rails', '2.9.0'
+gem 'rspec-rails', '2.11.0'
+
 end
 
 group :assets do
@@ -36,6 +37,11 @@ gem 'jbuilder', '~> 1.2'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :test do 
+  gem 'capybara', '1.1.2'
+  gem 'factory_girl_rails', '4.1.0'
 end
 
 group :production do 
